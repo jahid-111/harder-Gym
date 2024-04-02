@@ -10,7 +10,7 @@ const Header = () => {
             <ul className=' font-semibold text-md flex gap-5 justify-center items-center'>
                 <li><a className=' hover:text-yellow-500 hover:underline' href="#home">Home</a></li>
                 <li><a className=' hover:text-yellow-500 hover:underline' href="#about">About</a></li>
-                <li><a className=' hover:text-yellow-500 hover:underline' href="#contact">Contact</a></li>
+                <li><a className=' hover:text-yellow-500 hover:underline' href="#status">Time Status</a></li>
             </ul>
 
         </div>
