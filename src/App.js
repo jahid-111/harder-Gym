@@ -7,6 +7,8 @@ function App() {
   return (
     <div className=" sm:px-24 mx-auto">
       <Header></Header>
+
+      
       <Main></Main>
 
 

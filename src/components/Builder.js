@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 // import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faClock, faInfoCircle, faMapMarker,  } from '@fortawesome/free-solid-svg-icons';
+import { addDB, getDB } from '../utilities/Storage';
 const Builder = ( props ) => {
     const { cards }  =  props;
     let time ="00";
@@ -12,11 +13,12 @@ const Builder = ( props ) => {
     }
     const breakTimes = [ 10, 15,30, 35];
     const [breaks, setBreak] = useState("00");
-
     const breakAdd = (time) => {
-        setBreak(time);
+        addDB(time); //set direct LS
+        const existTime = JSON.parse(getDB())
+        setBreak(existTime.time);
     }
-
+    
     return (
         <div className='components top-0 sticky'>
             <section className='user-Info'>
